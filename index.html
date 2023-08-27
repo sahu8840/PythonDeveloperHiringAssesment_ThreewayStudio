@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio File Uploader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Audio File Uploader</h1>
+
+    <input type="file" id="fileInput" accept="audio/*" multiple>
+
+    <table id="fileList">
+        <thead>
+            <tr>
+                <th>File Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="fileTableBody">
+        </tbody>
+    </table>
+
+    <div id="warningContainer">
+        <p class="warning">Some files exceed 10 minutes duration.</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
